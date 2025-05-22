@@ -1,20 +1,17 @@
-// js/main.js
 document.addEventListener('DOMContentLoaded', function() {
-    // Set current year in the footer
+    // el año actual siempre en el footer
     const yearSpan = document.getElementById('currentYear');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // Basic active link styling for navigation
+    // js para el estilo de los botones que cuando estas en su pagina se queden en activ
     try {
         const currentPagePath = window.location.pathname;
         const navLinks = document.querySelectorAll('.site-nav__link');
 
         navLinks.forEach(link => {
             const linkPath = link.getAttribute('href');
-            // Check if the link's href is part of the current page path
-            // This handles cases where paths might be relative or absolute
             if (currentPagePath.endsWith(linkPath)) {
                 link.classList.add('site-nav__link--active');
             } else {

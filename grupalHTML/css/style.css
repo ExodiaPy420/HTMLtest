@@ -6,11 +6,11 @@
 }
 
 :root {
-    --color-base-background: #FAF8F3; /* Off-white for diagonal lines */
-    --color-pink-main: #FFC4D4;       /* Pink for diagonal lines & accents */
-    --color-black-text: #000000;      /* Main text color */
-    --color-white-pure: #FFFFFF;      /* For solid backgrounds of content sections */
-    --color-grey-light-section: #f7f5f1; /* Alternate section background */
+    --color-base-background: #FAF8F3; /* color que nso han pedido las de marketing */
+    --color-pink-main: #FFC4D4;       /* color que nos han pedido las de marketing tmb*/
+    --color-black-text: #000000;      /* Color del texto principal*/
+    --color-white-pure: #FFFFFF;      
+    --color-grey-light-section: #f7f5f1; /* para alternar color fondo entre secciones */
     --color-grey-medium-border: #dddddd;
     --color-grey-dark-text: #555555;
     --color-text-secondary: #777777;
@@ -22,9 +22,9 @@
     --color-footer-link-hover: #FAF8F3;
 
     --font-primary-body: 'Georgia', serif;
-    --font-logo: 'Catchy Mager', sans-serif; /* Fallback to sans-serif */
+    --font-logo: 'Catchy Mager', sans-serif; 
 
-    --spacing-unit: 1rem; /* Approx 16px, adjust as needed */
+    --spacing-unit: 1rem;
     --border-radius-small: 4px;
     --border-radius-medium: 8px;
 }
@@ -52,7 +52,7 @@ body {
     );
     color: var(--color-black-text);
     line-height: 1.7;
-    font-size: 100%; 
+    font-size: 100%;
     overflow-x: hidden;
 }
 
@@ -112,7 +112,7 @@ img {
 }
 
 ul, ol {
-    padding-left: calc(var(--spacing-unit) * 1.25); 
+    padding-left: calc(var(--spacing-unit) * 1.25);
     margin-bottom: var(--spacing-unit);
 }
 li {
@@ -140,10 +140,8 @@ blockquote {
 .text-center {
     text-align: center;
 }
-.margin-top-md {
-    margin-top: calc(var(--spacing-unit) * 1.5);
-}
-.sr-only { /* For screen readers only */
+
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -195,7 +193,7 @@ blockquote {
 .site-header {
     background-color: var(--color-header-bg);
     padding: var(--spacing-unit) 0;
-    position: sticky; 
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -236,10 +234,10 @@ blockquote {
 }
 .site-nav__link:hover,
 .site-nav__link:focus,
-.site-nav__link--active { 
+.site-nav__link--active {
     color: var(--color-pink-main);
     text-decoration: none;
-    background-color: rgba(255,255,255,0.1); /* pal hover*/
+    background-color: rgba(255,255,255,0.1); /* para eal hover*/
 }
 
 .language-switcher {
@@ -282,9 +280,6 @@ blockquote {
     border-bottom: 3px solid var(--color-pink-main);
 }
 
-.page-hero__title { /* es un h1 */
-    color: var(--color-black-text);
-}
 .page-hero__subtitle { /* es un p */
     font-size: clamp(1rem, 2vw, 1.2rem);
     max-width: 800px;
@@ -297,7 +292,7 @@ blockquote {
     padding: calc(var(--spacing-unit) * 3) 0;
     background-color: var(--color-white-pure);
 }
-.section-block--alt-bg { 
+.section-block--alt-bg {
     background-color: var(--color-grey-light-section);
 }
 .section-title { /* h2 con estilo compartido */
@@ -315,15 +310,14 @@ blockquote {
 }
 
 
-/* ----- HERO SECTION (Homepage) ----- */
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/hero-background-placeholder.jpg');
     background-size: cover;
     background-position: center;
-    color: var(--color-white-pure); /* Text on hero is white */
+    color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 8) var(--spacing-unit);
     text-align: center;
-    min-height: 70vh; /* Ensure it's substantial */
+    min-height: 70vh;
 }
 .hero__container {
     display: flex;
@@ -332,27 +326,26 @@ blockquote {
     justify-content: center;
     height: 100%;
 }
-.hero__title { /* This is an H1 */
+.hero__title {
     color: var(--color-white-pure);
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
-.hero__tagline { /* This is a P */
+.hero__tagline { 
     color: var(--color-white-pure);
     max-width: 700px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
-.hero__cta { /* This is an A with .button class */
+.hero__cta { /* esto es un ahref con laa clase button */
     margin-top: var(--spacing-unit);
 }
 
-/* ----- SERVICES OVERVIEW & CARDS (USING CSS GRID) ----- */
-/* .services-overview is a .section-block */
+
 .services-overview__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
 }
-.service-card { /* Block */
+.service-card { 
     background-color: var(--color-white-pure);
     border: 1px solid var(--color-grey-medium-border);
     border-radius: var(--border-radius-medium);
@@ -367,29 +360,29 @@ blockquote {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
-.service-card__image { /* Element */
+.service-card__image { 
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: var(--border-radius-small);
     margin-bottom: var(--spacing-unit);
 }
-.service-card__title { /* Element (H3) */
+.service-card__title { 
     margin-top: calc(var(--spacing-unit) * 0.5);
     margin-bottom: calc(var(--spacing-unit) * 0.75);
     font-size: 1.5rem;
 }
-.service-card__description { /* Element (P) */
+.service-card__description {
     font-size: 0.95rem;
     margin-bottom: var(--spacing-unit);
     flex-grow: 1;
     color: var(--color-grey-dark-text);
 }
-.service-card__link { /* Element (A) */
+.service-card__link { 
     color: var(--color-pink-main);
     font-weight: bold;
     text-decoration: none;
-    margin-top: auto; /* Aligns link at the bottom */
+    margin-top: auto; 
     padding: calc(var(--spacing-unit) * 0.5);
 }
 .service-card__link:hover, .service-card__link:focus {
@@ -397,8 +390,6 @@ blockquote {
     color: var(--color-black-text);
 }
 
-/* ----- PORTFOLIO PREVIEW (Homepage - CSS GRID) ----- */
-/* .portfolio-preview is a .section-block */
 .portfolio-preview__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -409,131 +400,121 @@ blockquote {
     border: 3px solid var(--color-white-pure);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 100%;
-    height: 200px; /* Consistent height for preview images */
+    height: 200px; 
     object-fit: cover;
 }
 .portfolio-preview__caption {
     margin-top: var(--spacing-unit);
 }
 
-/* ----- TESTIMONIALS ----- */
-/* .testimonials-snippet is a .section-block */
-.testimonial { /* Block (blockquote) - already styled with global blockquote */
+.testimonial { 
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
-.testimonial__text { /* Element (P within blockquote) */
+.testimonial__text { 
     margin-bottom: calc(var(--spacing-unit) * 0.5);
     font-size: 1.05rem;
 }
-.testimonial__author { /* Element (footer or cite within blockquote) */
-    display: block; /* Make it block for text-align */
+.testimonial__author { 
+    display: block; 
     text-align: right;
     font-style: normal;
     font-size: 1rem;
     color: var(--color-black-text);
     margin-top: calc(var(--spacing-unit) * 0.5);
 }
-/* For a grid of testimonials on About page */
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
 }
-.testimonial-card { /* Block (if used for individual testimonial cards) */
-    background-color: var(--color-white-pure); /* On alt-bg, ensure they are white */
+.testimonial-card { 
+    background-color: var(--color-white-pure); 
     border-left: 5px solid var(--color-pink-main);
     padding: var(--spacing-unit);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-/* Reuse .testimonial__text and .testimonial__author if structure is similar */
 
-/* ----- ABOUT SNIPPET (Homepage) ----- */
-/* .about-snippet is a .section-block */
-/* Uses .section-title and .section-subtitle, button */
-
-/* ----- WEDDING PACKS (Services Page - Flexbox for individual pack layout, Grid for pack container) ----- */
-/* .wedding-packs is a .section-block */
-.pack-container { /* This will be the grid container for packs if multiple packs are displayed in a grid */
-    display: grid; /* Or flex if only stacking vertically */
-    grid-template-columns: 1fr; /* Each pack takes full width if stacked */
+.pack-container { 
+    display: grid; 
+    grid-template-columns: 1fr; 
     gap: calc(var(--spacing-unit) * 2.5);
 }
-.pack { /* Block */
+.pack { 
     background-color: var(--color-white-pure);
     border-radius: var(--border-radius-medium);
     box-shadow: 0 6px 20px rgba(0,0,0,0.07);
-    display: flex; /* For image and content side-by-side */
+    display: flex; 
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
 }
 .pack:nth-child(even) {
-    flex-direction: row-reverse; /* Alternate layout */
+    flex-direction: row-reverse; 
 }
 .pack:hover, .pack:focus-within {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-.pack__figure { /* Element */
-    flex: 0 0 40%; /* Image takes 40% */
+.pack__figure {
+    flex: 0 0 40%; 
     min-height: 300px;
 }
-.pack__image { /* Element */
+.pack__image { 
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0; /* No radius for image filling its container */
+    border-radius: 0; 
 }
-.pack__content { /* Element */
+.pack__content {
     padding: calc(var(--spacing-unit) * 1.75);
-    flex: 1; /* Content takes remaining space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
 }
-.pack__title { /* Element (H3) */
+.pack__title { 
     font-size: 1.9rem;
     margin-bottom: calc(var(--spacing-unit) * 0.4);
 }
-.pack__price { /* Element (P) */
+.pack__price { 
     font-size: 1.4rem;
     color: var(--color-pink-main);
     font-weight: bold;
     margin-bottom: var(--spacing-unit);
 }
-.pack__description { /* Element (P) */
+.pack__description { 
     font-size: 1rem;
     margin-bottom: var(--spacing-unit);
     color: var(--color-grey-dark-text);
-    flex-grow: 1; /* Allow description to grow */
+    flex-grow: 1; 
 }
-.pack__services-title { /* Element (H4) */
+.pack__services-title { 
     font-size: 1.15rem;
     margin-bottom: calc(var(--spacing-unit) * 0.6);
     margin-top: var(--spacing-unit);
     border-bottom: 1px solid var(--color-grey-light-section);
     padding-bottom: calc(var(--spacing-unit) * 0.4);
 }
-.pack__services-list { /* Element (UL) */
+.pack__services-list { 
     list-style: none;
     padding-left: 0;
     margin-bottom: calc(var(--spacing-unit) * 1.25);
 }
-.pack__service-item { /* Element (LI) */
+.pack__service-item { 
     margin-bottom: calc(var(--spacing-unit) * 0.5);
     display: flex;
     align-items: flex-start;
     font-size: 0.95rem;
     line-height: 1.5;
 }
-.pack__cta { /* Element (A with .button) */
-    margin-top: auto; /* Pushes button to bottom */
-    align-self: flex-start; /* Align to start of flex item */
+.pack__cta { 
+    margin-top: auto; 
+    align-self: flex-start;
 }
 
-/* ----- PERSONALIZATION FOCUS (Services Page) ----- */
-/* .personalization-focus is a .section-block */
-.personalization-options { /* Block */
-    background-color: var(--color-white-pure); /* If on alt-bg, make it white */
+
+.personalization-options { 
+    background-color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 1.75);
     border-radius: var(--border-radius-medium);
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -541,17 +522,17 @@ blockquote {
     max-width: 750px;
     margin: calc(var(--spacing-unit) * 1.5) auto;
 }
-.personalization-options__title { /* Element (H3) */
+.personalization-options__title { 
     text-align: center;
     font-size: 1.4rem;
     margin-bottom: var(--spacing-unit);
 }
-.personalization-options__list { /* Element (UL) */
+.personalization-options__list { 
     list-style: none;
     padding-left: 0;
     margin-bottom: var(--spacing-unit);
 }
-.personalization-options__item { /* Element (LI) */
+.personalization-options__item { 
     margin-bottom: calc(var(--spacing-unit) * 0.6);
     display: flex;
     align-items: flex-start;
@@ -564,22 +545,21 @@ blockquote {
     text-align:center;
 }
 
-/* ----- TEAM (About Page - CSS GRID) ----- */
-/* #team is a .section-block */
-.team-members { /* Grid Container */
+
+.team-members { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
     margin-top: var(--spacing-unit);
 }
-.team-member { /* Block */
-    background-color: var(--color-white-pure); /* If #team is alt-bg */
+.team-member { 
+    background-color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 1.25);
     border-radius: var(--border-radius-medium);
     box-shadow: 0 4px 10px rgba(0,0,0,0.06);
     text-align: center;
 }
-.team-member__image { /* Element */
+.team-member__image { 
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -587,19 +567,18 @@ blockquote {
     object-fit: cover;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.team-member__name { /* Element (H3) */
+.team-member__name { 
     font-size: 1.5rem;
     margin-bottom: calc(var(--spacing-unit) * 0.4);
 }
-.team-member__role { /* Element (P) */
+.team-member__role { 
     font-size: 0.9rem;
     color: var(--color-text-secondary);
     margin-bottom: 0;
 }
 
-/* ----- OUR STORY (About Page) ----- */
-/* .our-story is a .section-block */
-.our-story__text { /* Element (P) */
+
+.our-story__text {
     font-size: 1.1rem;
     max-width: 800px;
     margin-left:auto;
@@ -608,34 +587,28 @@ blockquote {
     line-height: 1.8;
 }
 
-/* ----- MISSION/VISION/VALUES (About Page - CSS GRID) ----- */
-/* #mission-vision-values is a .section-block */
-.mvv-container { /* Grid Container */
+
+.mvv-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
 }
 .mvv-item { /* Block */
-    background-color: var(--color-white-pure); /* If parent section is alt-bg */
+    background-color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 1.25);
     border-radius: var(--border-radius-medium);
     border-top: 4px solid var(--color-pink-main);
 }
-.mvv-item__title { /* Element (H3) */
-    /* color: var(--color-pink-main); Optional if border is enough */
-    /* border-bottom: 2px solid var(--color-pink-main); */
-    /* padding-bottom: calc(var(--spacing-unit) * 0.25); */
-    /* display: inline-block; */
+.mvv-item__title { 
     margin-bottom: calc(var(--spacing-unit) * 0.75);
 }
-.mvv-item__text { /* Element (P) */
+.mvv-item__text {
     font-size: 0.95rem;
     color: var(--color-grey-dark-text);
 }
 
 
-/* ----- SHOP PRODUCTS (Shop Page - CSS GRID) ----- */
-/* #products is a .section-block, .product-grid uses styles similar to .services-overview__grid */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -643,37 +616,35 @@ blockquote {
 }
 
 .product-card__image {
-    height: 220px; /* Specific height for product images */
+    height: 220px;
     object-fit: cover;
     width: 100%;
     margin-bottom: var(--spacing-unit);
 }
 .product-card__title {font-size: 1.4rem;}
-.product-card__price { /* Element */
+.product-card__price { 
     font-weight: bold;
     color: var(--color-pink-main);
     font-size: 1.2rem;
-    margin-bottom: var(--spacing-unit) !important; /* Override p margin if needed */
+    margin-bottom: var(--spacing-unit) !important;
 }
-/* .product-card__description and .product-card__link can reuse .service-card__description/link styles or have their own */
 
 
-/* ----- GALLERY (Events Portfolio - CSS GRID) ----- */
-/* #gallery-grid is a .section-block */
-.image-gallery { /* Grid Container */
+
+.image-gallery { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-unit);
 }
-.gallery-item { /* Block */
+.gallery-item { 
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius-small);
 }
-.gallery-item__link { /* Element (A) */
+.gallery-item__link { 
     display: block;
 }
-.gallery-item__image { /* Element (IMG) */
+.gallery-item__image {
     border: 3px solid var(--color-white-pure);
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -686,7 +657,7 @@ blockquote {
     transform: scale(1.03);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
-.gallery-item__caption { /* Element */
+.gallery-item__caption { 
     position: absolute;
     bottom: 0;
     left: 0;
@@ -698,7 +669,7 @@ blockquote {
     font-size: 0.9rem;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
-    border-bottom-left-radius: var(--border-radius-small); /* Match image radius */
+    border-bottom-left-radius: var(--border-radius-small);
     border-bottom-right-radius: var(--border-radius-small);
 }
 .gallery-item__link:hover .gallery-item__caption,
@@ -706,108 +677,104 @@ blockquote {
     opacity: 1;
 }
 
-/* Moodboard Section (Gallery Page - CSS GRID) */
-.moodboard-grid { /* Grid Container */
+.moodboard-grid { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: calc(var(--spacing-unit) * 1.25);
 }
-.moodboard-item { /* Block */
-    background-color: var(--color-white-pure); /* If parent is alt-bg */
+.moodboard-item {
+    background-color: var(--color-white-pure);
     padding: var(--spacing-unit);
     border-radius:var(--border-radius-small);
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     text-align: center;
 }
-.moodboard-item__image { /* Element */
+.moodboard-item__image { 
     margin-bottom: calc(var(--spacing-unit) * 0.75);
     width: 100%;
-    height: 200px; /* Or aspect-ratio */
+    height: 200px; 
     object-fit: cover;
 }
-.moodboard-item__title { /* Element (H3) */
+.moodboard-item__title { 
     font-size: 1.3rem;
 }
 
-/* ----- BLOG (Blog Page & Article Page - CSS GRID for cards) ----- */
-/* #blog-posts is a .section-block */
-.blog-grid { /* Grid Container */
+.blog-grid { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
 }
-.blog-card { /* Block - uses structure similar to .service-card */
+.blog-card { 
     text-align: left;
     background-color: var(--color-white-pure);
-    display: flex; /* To ensure link covers card */
+    display: flex; 
     flex-direction: column;
 }
-.blog-card__link { /* Element (A wrapping content) */
+.blog-card__link { 
     text-decoration: none;
-    color: inherit; /* Inherit color from .blog-card */
+    color: inherit;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Make link fill the card */
+    height: 100%; 
 }
 .blog-card__link:hover .blog-card__title,
 .blog-card__link:focus .blog-card__title {
     color: var(--color-pink-main);
 }
 .blog-card__image { /* Element */
-    /* Styles from .service-card__image */
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-top-left-radius: var(--border-radius-medium); /* Match card radius if not default */
+    border-top-left-radius: var(--border-radius-medium); 
     border-top-right-radius: var(--border-radius-medium);
-    margin-bottom: 0; /* Image is flush */
+    margin-bottom: 0;
 }
-.blog-card__content { /* Element (Wrapper for text) */
+.blog-card__content { 
     padding: var(--spacing-unit);
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Allow content to fill space */
+    flex-grow: 1;
 }
-.blog-card__category { /* Element */
+.blog-card__category { 
     font-size: 0.8rem;
     color: var(--color-text-secondary);
     text-transform: uppercase;
     margin-bottom: calc(var(--spacing-unit) * 0.25);
     display: block;
 }
-.blog-card__title { /* Element (H3) */
+.blog-card__title { 
     font-size: 1.4rem;
     margin-bottom: calc(var(--spacing-unit) * 0.5);
 }
-.blog-card__excerpt { /* Element (P) */
+.blog-card__excerpt { 
     font-size: 0.9rem;
     color: var(--color-grey-dark-text);
     flex-grow: 1;
     margin-bottom: var(--spacing-unit);
 }
-.blog-card__read-more { /* Element (Span or A) */
+.blog-card__read-more { 
     color: var(--color-pink-main);
     font-weight: bold;
-    margin-top: auto; /* Push to bottom */
+    margin-top: auto; 
     align-self: flex-start;
 }
 
-/* Full Blog Post (Article Page) */
-.article-container { /* Wrapper for article, gets section-block styles */
+
+.article-container { /*esto es un wrapper para pillar los estilos de sectionblock*/
     padding-top: calc(var(--spacing-unit) * 2);
     padding-bottom: calc(var(--spacing-unit) * 2);
 }
-.blog-post-full { /* Block (Article tag) */
-    max-width: 800px; /* Optimal reading width */
+.blog-post-full { 
+    max-width: 800px; 
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--color-white-pure); /* Ensure solid background */
+    background-color: var(--color-white-pure);
     padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
     border-radius: var(--border-radius-medium);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-.article-header__title { /* H1 */
+.article-header__title { 
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: calc(var(--spacing-unit) * 0.75);
     text-align:left;
@@ -818,30 +785,28 @@ blockquote {
     margin-bottom: var(--spacing-unit);
 }
 .article-header__meta a { color: var(--color-text-secondary); }
-.article-header__main-image { /* Img */
+.article-header__main-image { 
     width: 100%;
     margin-bottom: calc(var(--spacing-unit) * 1.5);
     border-radius: var(--border-radius-medium);
 }
 
-.article-content h2 { /* H2 within article */
+.article-content h2 { 
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin-top: calc(var(--spacing-unit) * 1.5);
     margin-bottom: var(--spacing-unit);
     text-align:left;
 }
 .article-content p {
-    margin-bottom: var(--spacing-unit); /* Standard P margin */
+    margin-bottom: var(--spacing-unit); 
     font-size: 1.05rem;
     line-height: 1.8;
 }
-.article-content ul, .article-content ol {
-    margin-left: var(--spacing-unit); /* Indent lists slightly more */
-}
-.article-figure { /* Figure tag */
+
+.article-figure {
     margin: calc(var(--spacing-unit) * 1.5) 0;
 }
-/* .article-figure__image (IMG) and .article-figure__caption (FIGCAPTION) will use global img/figcaption styles */
+
 
 .article-footer {
     margin-top: calc(var(--spacing-unit) * 2);
@@ -857,9 +822,6 @@ blockquote {
 .share-buttons a { margin-left: calc(var(--spacing-unit) * 0.5); }
 
 
-
-/* ----- CAREERS PAGE ----- */
-/* #why-join-us is a .section-block */
 .why-join-us__text { /* P */
     max-width: 800px;
     margin-left:auto;
@@ -867,47 +829,44 @@ blockquote {
     text-align:center;
     font-size:1.1rem;
 }
-/* #job-openings is a .section-block, .job-listing uses grid (like .services-overview__grid) */
+
 .job-listing {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: calc(var(--spacing-unit) * 1.5);
 }
-.job-card { /* Block - similar structure to .service-card */
-    text-align: left; /* Override card default if needed */
+.job-card { 
+    text-align: left; 
     background-color: var(--color-white-pure);
 }
 .job-card__title { /* H3 */
-    text-align:center; /* Center title within card */
+    text-align:center; 
     font-size: 1.6rem;
 }
 .job-card__description { /* P */
     color: var(--color-grey-dark-text);
 }
-/* CTA button in job-card will use .button and its modifiers */
+
 .spontaneous-application { /* P */
     text-align: center;
     margin-top: calc(var(--spacing-unit) * 2);
     font-size: 1.05rem;
 }
 
-
-/* ----- CONTACT PAGE ----- */
-/* #contact-form-section is a .section-block */
-.contact-container { /* Wrapper for form and details, using Flexbox for side-by-side */
+.contact-container { /* wrapper usando flexbox para el formulario y los detalles */
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--spacing-unit) * 2);
-    background-color: var(--color-white-pure); /* Solid bg for the whole contact box */
+    background-color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 1.5);
     border-radius:var(--border-radius-medium);
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 .contact-form { /* Block */
-    flex: 2; /* Form takes more space */
+    flex: 2; 
     min-width: 300px;
 }
-.form-group { /* Not strictly BEM element of .contact-form, but a common form pattern */
+.form-group { /* aitor esto se que no es bem estrictamente pero hge visto que es un patrón muy común */
     margin-bottom: var(--spacing-unit);
 }
 .form-group label {
@@ -928,18 +887,18 @@ blockquote {
     border-radius: var(--border-radius-small);
     font-family: var(--font-primary-body);
     font-size: 1rem;
-    background-color: var(--color-base-background); /* Subtle background for inputs */
+    background-color: var(--color-base-background); 
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--color-pink-main);
-    box-shadow: 0 0 0 2px rgba(255, 196, 212, 0.5); /* Pink glow */
+    box-shadow: 0 0 0 2px rgba(255, 196, 212, 0.5); 
 }
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
 }
-.form-group .button { /* Button within form group */
+.form-group .button { 
     width: 100%;
 }
 .form-note { /* P */
@@ -949,7 +908,7 @@ blockquote {
 }
 
 .contact-details { /* Block */
-    flex: 1; /* Details take less space */
+    flex: 1; 
     min-width: 280px;
     background-color: var(--color-grey-light-section);
     padding: calc(var(--spacing-unit) * 1.25);
@@ -965,10 +924,10 @@ blockquote {
     display: flex;
     align-items: flex-start;
 }
-.contact-details__item .icon { /* Icon span/i within item */
+.contact-details__item .icon { 
     margin-right: calc(var(--spacing-unit) * 0.5);
     color: var(--color-pink-main);
-    margin-top: 2px; /* Align with text better */
+    margin-top: 2px; 
 }
 .contact-details__sub-title { /* H4 */
     margin-top: calc(var(--spacing-unit) * 1.5);
@@ -981,28 +940,8 @@ blockquote {
     font-size: 1rem;
 }
 
-
-/* ----- LEGAL PAGES ----- */
-/* .legal-page is a .section-block */
-.legal-page h1 {
-    margin-bottom: calc(var(--spacing-unit) * 1.25);
-    text-align:left;
-}
-.legal-page h2 {
-    margin-top: calc(var(--spacing-unit) * 1.5);
-    margin-bottom: calc(var(--spacing-unit) * 0.5);
-    font-size: 1.6rem;
-    text-align:left;
-}
-.legal-page p, .legal-page li {
-    font-size: 0.95rem;
-    line-height: 1.8;
-}
-
-/* ----- ICON STYLES (Placeholders or for actual icon font/SVG) ----- */
 .icon {
-    display: inline-block; /* Or as needed by icon library */
-    /* Styles for icon library would go here */
+    display: inline-block; 
 }
 .icon--check::before {
     content: '✓';
@@ -1011,7 +950,7 @@ blockquote {
     font-weight: bold;
 }
 .icon--heart::before {
-    content: '❤'; /* Or '♥' */
+    content: '❤'; 
     color: var(--color-pink-main);
     margin-right: calc(var(--spacing-unit) * 0.5);
 }
@@ -1019,29 +958,26 @@ blockquote {
 .icon--phone::before { content: '📞'; }
 .icon--location::before { content: '📍'; }
 
-
-/* ----- SITE FOOTER ----- */
 .site-footer {
     background-color: var(--color-footer-bg);
     color: var(--color-footer-text);
     padding: calc(var(--spacing-unit) * 2.5) 0;
     text-align: center;
     font-size: 0.9rem;
-    clear: both; /* Ensure it's below floated elements if any */
+    clear: both; 
 }
 
-.social-media { /* Block in footer */
+.social-media { 
     margin-bottom: var(--spacing-unit);
 }
-.social-media__link { /* Element */
+.social-media__link { 
     margin: 0 calc(var(--spacing-unit) * 0.75);
     display: inline-block;
 }
-.social-media__icon { /* Element (IMG) */
+.social-media__icon { 
     width: 28px;
     height: 28px;
     vertical-align: middle;
-    /* Assuming SVG icons are black and need to be white on dark footer */
     filter: brightness(0) invert(1);
     transition: transform 0.15s ease-in-out;
 }
@@ -1049,42 +985,40 @@ blockquote {
 .social-media__link:focus .social-media__icon {
     transform: scale(1.1);
 }
-.site-footer__copyright { /* Element (P) */
+.site-footer__copyright { 
     margin-bottom: calc(var(--spacing-unit) * 0.5);
-    color: var(--color-grey-medium-border); /* Lighter grey for footer text */
+    color: var(--color-grey-medium-border); 
 }
 
 
 
-/* ----- RESPONSIVE MEDIA QUERIES ----- */
-@media (max-width: 992px) { /* Tablet and smaller */
+
+@media (max-width: 992px) { /* Tablets */
     .site-nav {
-        /* For a real project, implement a JS-driven hamburger menu here */
-        /* For now, we might hide it or make it stack if space runs out */
-        display: none; /* Simplest approach for now, not ideal for UX */
+        display: none;
     }
     .language-switcher {
-        margin-left: auto; /* Push to right if nav is hidden */
+        margin-left: auto;
     }
 
     .pack {
-        flex-direction: column !important; /* Force stack on tablets too */
+        flex-direction: column !important; 
     }
     .pack__figure {
-        flex-basis: auto; /* Allow image to take natural height or a fixed one */
+        flex-basis: auto;
         height: 280px;
     }
     
 }
 
-@media (max-width: 768px) { /* Mobile */
+@media (max-width: 768px) { 
     h1, .hero__title { font-size: clamp(1.8rem, 6vw, 2.5rem); }
     h2, .section-title { font-size: clamp(1.5rem, 5vw, 2rem); }
     h3 { font-size: clamp(1.2rem, 4vw, 1.6rem); }
 
     .hero {
         padding: calc(var(--spacing-unit) * 6) var(--spacing-unit);
-        min-height: auto; /* Allow hero to shrink on mobile */
+        min-height: auto;
     }
     .page-hero {
         padding: calc(var(--spacing-unit) * 4) var(--spacing-unit) calc(var(--spacing-unit) * 2) var(--spacing-unit);
@@ -1100,7 +1034,7 @@ blockquote {
     .blog-grid,
     .job-listing,
     .testimonials-grid {
-        grid-template-columns: 1fr; /* Single column for most grids on mobile */
+        grid-template-columns: 1fr;
     }
 
     .pack__figure {
@@ -1108,12 +1042,12 @@ blockquote {
     }
 
     .contact-container {
-        flex-direction: column; /* Stack form and details */
+        flex-direction: column; 
         padding: var(--spacing-unit);
     }
 
     .section-block,
-    main > .container:not(.section-block):not(.article-container), /* For containers in main not using .section-block */
+    main > .container:not(.section-block):not(.article-container), /* para los contenedores en main que no usen .section-block */
     .article-container {
         padding-top: calc(var(--spacing-unit) * 2);
         padding-bottom: calc(var(--spacing-unit) * 2);
@@ -1121,9 +1055,9 @@ blockquote {
     
 }
 
-@media (max-width: 480px) { /* Smaller Mobile */
+@media (max-width: 480px) { 
     body {
-        font-size: 93.75%; /* Approx 15px if base is 16px */
+        font-size: 93.75%; 
     }
     .container {
         width: 95%;
@@ -1134,7 +1068,7 @@ blockquote {
     .language-switcher__link, .language-switcher__separator {
         font-size: 0.8rem;
     }
-    .button { /* Smaller buttons on small screens */
+    .button { 
         padding: calc(var(--spacing-unit) * 0.6) calc(var(--spacing-unit) * 1.2);
         font-size: 0.85rem;
     }
@@ -1147,6 +1081,6 @@ blockquote {
         padding-bottom: calc(var(--spacing-unit) * 1.5);
     }
     .pack__content, .personalization-options, .contact-details, .blog-post-full {
-        padding: var(--spacing-unit); /* Reduce padding inside cards/blocks */
+        padding: var(--spacing-unit); 
     }
 }
