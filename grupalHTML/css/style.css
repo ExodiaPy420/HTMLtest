@@ -18,8 +18,8 @@
     --color-header-text: #FAF8F3;
     --color-footer-bg: #000000;
     --color-footer-text: #FAF8F3;
-    --color-footer-link: #FFC4D4;
-    --color-footer-link-hover: #FAF8F3;
+    --color-footer-link: var(--color-pink-main); 
+    --color-footer-link-hover: var(--color-base-background); 
 
     --font-primary-body: 'Georgia', serif;
     --font-logo: 'Catchy Mager', sans-serif; 
@@ -141,17 +141,6 @@ blockquote {
     text-align: center;
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
 
 .button {
     padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 1.75);
@@ -270,8 +259,6 @@ blockquote {
     font-size: 0.85rem;
 }
 
-
-
 .page-hero {
     background-color: var(--color-grey-light-section);
     color: var(--color-black-text);
@@ -309,7 +296,6 @@ blockquote {
     margin-right: auto;
 }
 
-
 .hero {
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../images/hero-background-placeholder.jpg');
     background-size: cover;
@@ -338,7 +324,6 @@ blockquote {
 .hero__cta { /* esto es un ahref con laa clase button */
     margin-top: var(--spacing-unit);
 }
-
 
 .services-overview__grid {
     display: grid;
@@ -402,9 +387,6 @@ blockquote {
     width: 100%;
     height: 200px; 
     object-fit: cover;
-}
-.portfolio-preview__caption {
-    margin-top: var(--spacing-unit);
 }
 
 .testimonial { 
@@ -512,7 +494,6 @@ blockquote {
     align-self: flex-start;
 }
 
-
 .personalization-options { 
     background-color: var(--color-white-pure); 
     padding: calc(var(--spacing-unit) * 1.75);
@@ -545,7 +526,6 @@ blockquote {
     text-align:center;
 }
 
-
 .team-members { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -577,7 +557,6 @@ blockquote {
     margin-bottom: 0;
 }
 
-
 .our-story__text {
     font-size: 1.1rem;
     max-width: 800px;
@@ -586,7 +565,6 @@ blockquote {
     text-align: center;
     line-height: 1.8;
 }
-
 
 .mvv-container {
     display: grid;
@@ -607,8 +585,6 @@ blockquote {
     color: var(--color-grey-dark-text);
 }
 
-
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -628,8 +604,6 @@ blockquote {
     font-size: 1.2rem;
     margin-bottom: var(--spacing-unit) !important;
 }
-
-
 
 .image-gallery { 
     display: grid;
@@ -759,7 +733,6 @@ blockquote {
     align-self: flex-start;
 }
 
-
 .article-container { /*esto es un wrapper para pillar los estilos de sectionblock*/
     padding-top: calc(var(--spacing-unit) * 2);
     padding-bottom: calc(var(--spacing-unit) * 2);
@@ -807,7 +780,6 @@ blockquote {
     margin: calc(var(--spacing-unit) * 1.5) 0;
 }
 
-
 .article-footer {
     margin-top: calc(var(--spacing-unit) * 2);
     border-top: 1px solid var(--color-grey-light-section);
@@ -820,7 +792,6 @@ blockquote {
 
 .share-buttons span { margin-right: calc(var(--spacing-unit) * 0.5); }
 .share-buttons a { margin-left: calc(var(--spacing-unit) * 0.5); }
-
 
 .why-join-us__text { /* P */
     max-width: 800px;
@@ -853,7 +824,7 @@ blockquote {
     font-size: 1.05rem;
 }
 
-.contact-container { /* wrapper usando flexbox para el formulario y los detalles */
+.contact-layout { 
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--spacing-unit) * 2);
@@ -901,7 +872,7 @@ blockquote {
 .form-group .button { 
     width: 100%;
 }
-.form-note { /* P */
+.contact-form__note { /* Renamed from .form-note to match HTML */
     font-size: 0.85rem;
     color: var(--color-text-secondary);
     margin-top: var(--spacing-unit);
@@ -990,9 +961,6 @@ blockquote {
     color: var(--color-grey-medium-border); 
 }
 
-
-
-
 @media (max-width: 992px) { /* Tablets */
     .site-nav {
         display: none;
@@ -1041,7 +1009,7 @@ blockquote {
         height: 220px;
     }
 
-    .contact-container {
+    .contact-layout { /* Was .contact-container, ensuring media query also targets correctly */
         flex-direction: column; 
         padding: var(--spacing-unit);
     }
