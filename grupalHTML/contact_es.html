@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con W3 STUDIOS para planificar tu boda. Solicita presupuesto o haznos tus preguntas.">
+    <title>Contacto - Planifica tu Boda con W3 STUDIOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-header__container">
+            <a href="index_es.html" class="site-header__logo">W3 STUDIOS</a>
+            <nav class="site-nav" aria-label="Navegación principal">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item"><a href="index_es.html" class="site-nav__link">Inicio</a></li>
+                    <li class="site-nav__item"><a href="services_es.html" class="site-nav__link">Servicios</a></li>
+                    <li class="site-nav__item"><a href="shop_es.html" class="site-nav__link">Tienda</a></li>
+                    <li class="site-nav__item"><a href="about_es.html" class="site-nav__link">Sobre Nosotras</a></li>
+                    <li class="site-nav__item"><a href="blog_es.html" class="site-nav__link">Blog</a></li>
+                    <li class="site-nav__item"><a href="gallery_es.html" class="site-nav__link">Galería</a></li>
+                    <li class="site-nav__item"><a href="careers_es.html" class="site-nav__link">Carreras</a></li>
+                    <li class="site-nav__item"><a href="contact_es.html" class="site-nav__link site-nav__link--active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <a href="contact_es.html" class="language-switcher__link language-switcher__link--active" lang="es" aria-label="Versión en español">ES</a>
+                <span class="language-switcher__separator">|</span>
+                <a href="contact_en.html" class="language-switcher__link" lang="en" aria-label="Switch to English version">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero" aria-labelledby="contact-page-title">
+            <div class="container page-hero__container">
+                <h1 id="contact-page-title" class="page-hero__title">Hablemos de Tu Boda</h1>
+                <p class="page-hero__subtitle">Estamos aquí para escucharte y ayudarte a dar forma a la celebración de tus sueños.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-block" aria-labelledby="contact-form-title">
+            <div class="container">
+                <h2 id="formulario-presupuesto" class="section-title">Solicita tu Presupuesto Personalizado</h2>
+                <p class="section-subtitle">"Completa el formulario a continuación y recibirás tu estimación sin compromiso." O, si lo prefieres, escríbenos directamente.</p>
+
+                <div class="contact-layout">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="mailto:info@w3studios.example.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name_es" class="form-group__label">Nombre Completo:</label>
+                                <input type="text" id="name_es" name="nombre" class="form-group__input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email_es" class="form-group__label">Correo Electrónico:</label>
+                                <input type="email" id="email_es" name="email" class="form-group__input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_es" class="form-group__label">Teléfono (Opcional):</label>
+                                <input type="tel" id="phone_es" name="telefono" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date_es" class="form-group__label">Fecha Estimada del Evento:</label>
+                                <input type="date" id="event-date_es" name="fecha_evento" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <label for="service-type_es" class="form-group__label">Tipo de Servicio de Interés:</label>
+                                <select id="service-type_es" name="tipo_servicio" class="form-group__input">
+                                    <option value="">Selecciona una opción...</option>
+                                    <option value="pack-esencial">Pack Esencial</option>
+                                    <option value="pack-premium">Pack Premium</option>
+                                    <option value="pack-exclusivo">Pack Exclusivo</option>
+                                    <option value="producto-tienda">Producto de Tienda (especificar en mensaje)</option>
+                                    <option value="personalizado">Planificación Totalmente Personalizada</option>
+                                    <option value="otro">Otro (especificar en mensaje)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message_es" class="form-group__label">Cuéntanos sobre tu boda soñada:</label>
+                                <textarea id="message_es" name="mensaje" rows="6" class="form-group__textarea" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="button button--primary form-group__button">Enviar Solicitud</button>
+                            </div>
+                        </form>
+                        <p class="contact-form__note">Nota: Este formulario utilizará tu cliente de correo electrónico para enviar el mensaje. Si prefieres otro método, contáctanos a través de los datos a continuación.</p>
+                    </div>
+
+                    <aside class="contact-details">
+                        <h3 class="contact-details__title">Otras Formas de Contacto</h3>
+                        <p class="contact-details__item"><i class="icon icon--email"></i> <strong>Email:</strong> <a href="mailto:info@w3studios.example.com">info@w3studios.example.com</a></p>
+                        <p class="contact-details__item"><i class="icon icon--phone"></i> <strong>Teléfono:</strong> <a href="tel:+34000000000">+34 000 000 000</a> (L-V de 10h a 18h)</p>
+                        <address class="contact-details__item contact-details__address">
+                            <i class="icon icon--location"></i>
+                            <div>
+                                <strong>Estudio (con cita previa):</strong><br>
+                                Calle Ficticia 123, Oficina 4B<br>
+                                Ciudad Creativa, CP 08000
+                            </div>
+                        </address>
+
+                        <h4 class="contact-details__sub-title">Síguenos:</h4>
+                        <div class="social-media-contact">
+                            <a href="#" class="social-media-contact__link" aria-label="Facebook de W3 Studios" target="_blank" rel="noopener noreferrer">Facebook</a> |
+                            <a href="#" class="social-media-contact__link" aria-label="Instagram de W3 Studios" target="_blank" rel="noopener noreferrer">Instagram</a> |
+                            <a href="#" class="social-media-contact__link" aria-label="Pinterest de W3 Studios" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__container">
+            <div class="social-media">
+                <a href="#" class="social-media__link" aria-label="Facebook W3 Studios"><img src="images/icon-facebook.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Instagram W3 Studios"><img src="images/icon-instagram.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Pinterest W3 Studios"><img src="images/icon-pinterest.svg" alt="" class="social-media__icon"></a>
+            </div>
+            <p class="site-footer__copyright">&copy; <span id="currentYear"></span> W3 STUDIOS. Todos los derechos reservados.</p>
+
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
