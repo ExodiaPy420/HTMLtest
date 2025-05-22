@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contacta con W3 STUDIOS para planificar tu boda. Solicita presupuesto o haznos tus preguntas.">
-    <title>Contacto - Planifica tu Boda con W3 STUDIOS</title>
+    <meta name="description"
+        content="Explora el portfolio de eventos de W3 STUDIOS. Inspiración y ejemplos de bodas reales y momentos mágicos que hemos creado.">
+    <title>Portfolio de Eventos e Inspiración - W3 STUDIOS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="site-header">
         <div class="container site-header__container">
             <a href="index_es.html" class="site-header__logo">W3 STUDIOS</a>
+            <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+            </button>
             <nav class="site-nav" aria-label="Navegación principal">
                 <ul class="site-nav__list">
                     <li class="site-nav__item"><a href="index_es.html" class="site-nav__link">Inicio</a></li>
@@ -18,94 +26,138 @@
                     <li class="site-nav__item"><a href="shop_es.html" class="site-nav__link">Tienda</a></li>
                     <li class="site-nav__item"><a href="about_es.html" class="site-nav__link">Sobre Nosotras</a></li>
                     <li class="site-nav__item"><a href="blog_es.html" class="site-nav__link">Blog</a></li>
-                    <li class="site-nav__item"><a href="gallery_es.html" class="site-nav__link">Galería</a></li>
+                    <li class="site-nav__item"><a href="gallery_es.html"
+                            class="site-nav__link site-nav__link--active">Galería</a></li>
                     <li class="site-nav__item"><a href="careers_es.html" class="site-nav__link">Carreras</a></li>
-                    <li class="site-nav__item"><a href="contact_es.html" class="site-nav__link site-nav__link--active">Contacto</a></li>
+                    <li class="site-nav__item"><a href="contact_es.html" class="site-nav__link">Contacto</a></li>
                 </ul>
             </nav>
             <div class="language-switcher">
-                <a href="contact_es.html" class="language-switcher__link language-switcher__link--active" lang="es" aria-label="Versión en español">ES</a>
+                <a href="gallery_es.html" class="language-switcher__link language-switcher__link--active" lang="es"
+                    aria-label="Versión en español">ES</a>
                 <span class="language-switcher__separator">|</span>
-                <a href="contact_en.html" class="language-switcher__link" lang="en" aria-label="Switch to English version">EN</a>
+                <a href="gallery_en.html" class="language-switcher__link" lang="en"
+                    aria-label="Switch to English version">EN</a>
             </div>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="page-hero" aria-labelledby="contact-page-title">
+        <section class="page-hero" aria-labelledby="gallery-page-title">
             <div class="container page-hero__container">
-                <h1 id="contact-page-title" class="page-hero__title">Hablemos de Tu Boda</h1>
-                <p class="page-hero__subtitle">Estamos aquí para escucharte y ayudarte a dar forma a la celebración de tus sueños.</p>
+                <h1 id="gallery-page-title" class="page-hero__title">Portfolio de Eventos</h1>
+                <p class="page-hero__subtitle">Sumérgete en un mundo de belleza y creatividad. Aquí encontrarás una
+                    muestra de nuestro trabajo y la magia que hemos creado en bodas anteriores.</p>
             </div>
         </section>
 
-        <section class="contact-section section-block" aria-labelledby="contact-form-title">
+        <section class="image-gallery-section section-block" aria-labelledby="real-weddings-title">
             <div class="container">
-                <h2 id="formulario-presupuesto" class="section-title">Solicita tu Presupuesto Personalizado</h2>
-                <p class="section-subtitle">"Completa el formulario a continuación y recibirás tu estimación sin compromiso." O, si lo prefieres, escríbenos directamente.</p>
+                <h2 id="real-weddings-title" class="section-title">Bodas Reales, Momentos Mágicos</h2>
+                <p class="section-subtitle">Deja que estas imágenes te inspiren.</p>
+                <div class="image-gallery">
+                    <article class="gallery-item">
+                        <a href="images/gallery/boda-romantica-atardecer.jpg"
+                            data-title="Ceremonia Romántica al Atardecer - Boda de Laura y Carlos"
+                            class="gallery-item__link">
+                            <img src="images/gallery/boda-romantica-atardecer.jpg"
+                                alt="Miniatura de ceremonia romántica al atardecer" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Laura & Carlos</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/banquete-rustico.jpg"
+                            data-title="Decoración Rústica Chic para Banquete - Enlace Ana y David"
+                            class="gallery-item__link">
+                            <img src="images/gallery/banquete-rustico.jpg"
+                                alt="Miniatura de decoración rústica chic para banquete" class="gallery-item__image">
+                            <div class="gallery-item__caption">Enlace Ana & David</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/boda-alberto-susana.jpg"
+                            data-title="Detalles Personalizados en Mesa - Boda Sofía y Miguel"
+                            class="gallery-item__link">
+                            <img src="images/gallery/boda-alberto-susana.jpg"
+                                alt="Miniatura de detalles personalizados en mesa de boda" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Alberto & Susana</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/novios-felices.jpg"
+                            data-title="Novios Felices Celebrando - Boda Clara y Javier" class="gallery-item__link">
+                            <img src="images/gallery/novios-felices.jpg"
+                                alt="Miniatura de novios felices celebrando su boda" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Clara & Javier</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/tarta-nupcial.jpg"
+                            data-title="Tarta Nupcial Elegante - Boda Elena y Pablo" class="gallery-item__link">
+                            <img src="images/gallery/tarta-nupcial.jpg" alt="Miniatura de tarta nupcial elegante"
+                                class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Elena & Pablo</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/iluminacion-nocturna.jpg"
+                            data-title="Iluminación Mágica para Fiesta Nocturna - Boda Marta y Luis"
+                            class="gallery-item__link">
+                            <img src="images/gallery/iluminacion-nocturna.jpg"
+                                alt="Miniatura de iluminación mágica para fiesta nocturna" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Marta & Luis</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/decoracion-floral-altar.jpg"
+                            data-title="Decoración Floral Espectacular en Altar - Boda Lucía y Marcos"
+                            class="gallery-item__link">
+                            <img src="images/gallery/decoracion-floral-altar.jpg"
+                                alt="Miniatura de decoración floral espectacular en altar" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Lucía & Marcos</div>
+                        </a>
+                    </article>
+                    <article class="gallery-item">
+                        <a href="images/gallery/vista-area-banquete.jpg"
+                            data-title="Vista Aérea del Banquete al Aire Libre - Boda Inés y Tom"
+                            class="gallery-item__link">
+                            <img src="images/gallery/vista-area-banquete.jpg"
+                                alt="Miniatura de vista aérea del banquete al aire libre" class="gallery-item__image">
+                            <div class="gallery-item__caption">Boda Inés & Tom</div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="contact-layout">
-                    <div class="contact-form-wrapper">
-                        <form class="contact-form" action="mailto:info@w3studios.example.com" method="post" enctype="text/plain">
-                            <div class="form-group">
-                                <label for="name_es" class="form-group__label">Nombre Completo:</label>
-                                <input type="text" id="name_es" name="nombre" class="form-group__input" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email_es" class="form-group__label">Correo Electrónico:</label>
-                                <input type="email" id="email_es" name="email" class="form-group__input" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone_es" class="form-group__label">Teléfono (Opcional):</label>
-                                <input type="tel" id="phone_es" name="telefono" class="form-group__input">
-                            </div>
-                            <div class="form-group">
-                                <label for="event-date_es" class="form-group__label">Fecha Estimada del Evento:</label>
-                                <input type="date" id="event-date_es" name="fecha_evento" class="form-group__input">
-                            </div>
-                            <div class="form-group">
-                                <label for="service-type_es" class="form-group__label">Tipo de Servicio de Interés:</label>
-                                <select id="service-type_es" name="tipo_servicio" class="form-group__input">
-                                    <option value="">Selecciona una opción...</option>
-                                    <option value="pack-esencial">Pack Esencial</option>
-                                    <option value="pack-premium">Pack Premium</option>
-                                    <option value="pack-exclusivo">Pack Exclusivo</option>
-                                    <option value="producto-tienda">Producto de Tienda (especificar en mensaje)</option>
-                                    <option value="personalizado">Planificación Totalmente Personalizada</option>
-                                    <option value="otro">Otro (especificar en mensaje)</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message_es" class="form-group__label">Cuéntanos sobre tu boda soñada:</label>
-                                <textarea id="message_es" name="mensaje" rows="6" class="form-group__textarea" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="button button--primary form-group__button">Enviar Solicitud</button>
-                            </div>
-                        </form>
-                        <p class="contact-form__note">Nota: Este formulario utilizará tu cliente de correo electrónico para enviar el mensaje. Si prefieres otro método, contáctanos a través de los datos a continuación.</p>
-                    </div>
-
-                    <aside class="contact-details">
-                        <h3 class="contact-details__title">Otras Formas de Contacto</h3>
-                        <p class="contact-details__item"><i class="icon icon--email"></i> <strong>Email:</strong> <a href="mailto:info@w3studios.example.com">info@w3studios.example.com</a></p>
-                        <p class="contact-details__item"><i class="icon icon--phone"></i> <strong>Teléfono:</strong> <a href="tel:+34000000000">+34 000 000 000</a> (L-V de 10h a 18h)</p>
-                        <address class="contact-details__item contact-details__address">
-                            <i class="icon icon--location"></i>
-                            <div>
-                                <strong>Estudio (con cita previa):</strong><br>
-                                Calle Ficticia 123, Oficina 4B<br>
-                                Ciudad Creativa, CP 08000
-                            </div>
-                        </address>
-
-                        <h4 class="contact-details__sub-title">Síguenos:</h4>
-                        <div class="social-media-contact">
-                            <a href="#" class="social-media-contact__link" aria-label="Facebook de W3 Studios" target="_blank" rel="noopener noreferrer">Facebook</a> |
-                            <a href="#" class="social-media-contact__link" aria-label="Instagram de W3 Studios" target="_blank" rel="noopener noreferrer">Instagram</a> |
-                            <a href="#" class="social-media-contact__link" aria-label="Pinterest de W3 Studios" target="_blank" rel="noopener noreferrer">Pinterest</a>
-                        </div>
-                    </aside>
+        <section class="moodboard-inspiration section-block section-block--alt-bg" aria-labelledby="moodboards-title">
+            <div class="container">
+                <h2 id="moodboards-title" class="section-title">Moodboards Temáticos</h2>
+                <p class="section-subtitle">Explora diferentes estilos y paletas de colores para encontrar la
+                    inspiración perfecta para tu día.</p>
+                <div class="moodboard-grid">
+                    <article class="moodboard-item">
+                        <figure class="moodboard-item__figure">
+                            <img src="images/moodboard-boho.jpg" alt="Moodboard para una boda de estilo Boho Chic"
+                                class="moodboard-item__image">
+                        </figure>
+                        <h3 class="moodboard-item__title">Estilo Boho Chic</h3>
+                    </article>
+                    <article class="moodboard-item">
+                        <figure class="moodboard-item__figure">
+                            <img src="images/moodboard-clasico.jpg"
+                                alt="Moodboard para una boda de estilo Clásico Atemporal" class="moodboard-item__image">
+                        </figure>
+                        <h3 class="moodboard-item__title">Estilo Clásico Atemporal</h3>
+                    </article>
+                    <article class="moodboard-item">
+                        <figure class="moodboard-item__figure">
+                            <img src="images/moodboard-moderno.jpg"
+                                alt="Moodboard para una boda de estilo Moderno Minimalista"
+                                class="moodboard-item__image">
+                        </figure>
+                        <h3 class="moodboard-item__title">Estilo Moderno Minimalista</h3>
+                    </article>
                 </div>
             </div>
         </section>
@@ -114,14 +166,19 @@
     <footer class="site-footer">
         <div class="container site-footer__container">
             <div class="social-media">
-                <a href="#" class="social-media__link" aria-label="Facebook W3 Studios"><img src="images/icon-facebook.svg" alt="" class="social-media__icon"></a>
-                <a href="#" class="social-media__link" aria-label="Instagram W3 Studios"><img src="images/icon-instagram.svg" alt="" class="social-media__icon"></a>
-                <a href="#" class="social-media__link" aria-label="Pinterest W3 Studios"><img src="images/icon-pinterest.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Facebook W3 Studios"><img
+                        src="images/icon-facebook.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Instagram W3 Studios"><img
+                        src="images/icon-instagram.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Pinterest W3 Studios"><img
+                        src="images/icon-pinterest.svg" alt="" class="social-media__icon"></a>
             </div>
-            <p class="site-footer__copyright">&copy; <span id="currentYear"></span> W3 STUDIOS. Todos los derechos reservados.</p>
+            <p class="site-footer__copyright">&copy; <span id="currentYear"></span> W3 STUDIOS. Todos los derechos
+                reservados.</p>
 
         </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>

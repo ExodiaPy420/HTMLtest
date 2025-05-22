@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 STUDIOS - Bodas Únicas y Personalizadas</title>
     <link rel="stylesheet" href="css/style.css">
-    </head>
+</head>
+
 <body>
     <header class="site-header">
         <div class="container site-header__container">
             <a href="index_es.html" class="site-header__logo">W3 STUDIOS</a>
+            <button class="hamburger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+            </button>
             <nav class="site-nav" aria-label="Navegación principal">
                 <ul class="site-nav__list">
-                    <li class="site-nav__item"><a href="index_es.html" class="site-nav__link site-nav__link--active">Inicio</a></li>
+                    <li class="site-nav__item"><a href="index_es.html"
+                            class="site-nav__link site-nav__link--active">Inicio</a></li>
                     <li class="site-nav__item"><a href="services_es.html" class="site-nav__link">Servicios</a></li>
                     <li class="site-nav__item"><a href="shop_es.html" class="site-nav__link">Tienda</a></li>
                     <li class="site-nav__item"><a href="about_es.html" class="site-nav__link">Sobre Nosotras</a></li>
@@ -23,9 +31,11 @@
                 </ul>
             </nav>
             <div class="language-switcher">
-                <a href="index_es.html" class="language-switcher__link language-switcher__link--active" lang="es" aria-label="Versión en español">ES</a>
+                <a href="index_es.html" class="language-switcher__link language-switcher__link--active" lang="es"
+                    aria-label="Versión en español">ES</a>
                 <span class="language-switcher__separator">|</span>
-                <a href="index_en.html" class="language-switcher__link" lang="en" aria-label="Switch to English version">EN</a>
+                <a href="index_en.html" class="language-switcher__link" lang="en"
+                    aria-label="Switch to English version">EN</a>
             </div>
         </div>
     </header>
@@ -34,45 +44,59 @@
         <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">POR QUE UN 'SÍ QUIERO' MERECE SER PERFECTO</h1>
-                <p class="hero__tagline">Creamos bodas únicas y personalizadas, cuidando cada detalle para hacer tu día inolvidable.</p>
-                <a href="contact_es.html#formulario-presupuesto" class="button button--primary hero__cta">Obtén tu Presupuesto</a>
+                <p class="hero__tagline">Creamos bodas únicas y personalizadas, cuidando cada detalle para hacer tu día
+                    inolvidable.</p>
+                <a href="contact_es.html#formulario-presupuesto" class="button button--primary hero__cta">Obtén tu
+                    Presupuesto</a>
             </div>
         </section>
 
         <section class="services-overview section-block" aria-labelledby="services-overview-title">
             <div class="container">
                 <h2 id="services-overview-title" class="section-title">Nuestros Servicios Destacados</h2>
-                <div class="services-overview__grid"> <article class="service-card">
-                        <img src="images/home-pack-esencial.jpeg" alt="Representación visual del Pack Esencial de W3 Studios" class="service-card__image">
+                <div class="services-overview__grid">
+                    <article class="service-card">
+                        <img src="images/home-pack-esencial.jpeg"
+                            alt="Representación visual del Pack Esencial de W3 Studios" class="service-card__image">
                         <h3 class="service-card__title">Pack Esencial</h3>
-                        <p class="service-card__description">Asistencia en aspectos clave de la planificación de tu boda.</p>
+                        <p class="service-card__description">Asistencia en aspectos clave de la planificación de tu
+                            boda.</p>
                         <a href="services_es.html#pack-esencial" class="service-card__link">Saber más</a>
                     </article>
                     <article class="service-card">
-                        <img src="images/home-pack-premium.jpeg" alt="Representación visual del Pack Premium de W3 Studios" class="service-card__image">
+                        <img src="images/home-pack-premium.jpeg"
+                            alt="Representación visual del Pack Premium de W3 Studios" class="service-card__image">
                         <h3 class="service-card__title">Pack Premium</h3>
-                        <p class="service-card__description">Planificación detallada y acompañamiento completo en cada etapa.</p>
+                        <p class="service-card__description">Planificación detallada y acompañamiento completo en cada
+                            etapa.</p>
                         <a href="services_es.html#pack-premium" class="service-card__link">Saber más</a>
                     </article>
                     <article class="service-card">
-                        <img src="images/home-pack-exclusivo.jpeg" alt="Representación visual del Pack Exclusivo de W3 Studios" class="service-card__image">
+                        <img src="images/home-pack-exclusivo.jpeg"
+                            alt="Representación visual del Pack Exclusivo de W3 Studios" class="service-card__image">
                         <h3 class="service-card__title">Pack Exclusivo</h3>
-                        <p class="service-card__description">Planificación integral de lujo, desde el concepto hasta la ejecución final.</p>
+                        <p class="service-card__description">Planificación integral de lujo, desde el concepto hasta la
+                            ejecución final.</p>
                         <a href="services_es.html#pack-exclusivo" class="service-card__link">Saber más</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio-preview section-block section-block--alt-bg" aria-labelledby="portfolio-preview-title">
+        <section class="portfolio-preview section-block section-block--alt-bg"
+            aria-labelledby="portfolio-preview-title">
             <div class="container">
                 <h2 id="portfolio-preview-title" class="section-title">Momentos Inolvidables</h2>
                 <div class="portfolio-preview__grid">
-                    <img src="images/collage-placeholder-1.jpeg" alt="Boda elegante organizada por W3 Studios" class="portfolio-preview__image">
-                    <img src="images/collage-placeholder-2.jpeg" alt="Detalle de decoración de boda W3 Studios" class="portfolio-preview__image">
-                    <img src="images/collage-placeholder-3.jpeg" alt="Pareja feliz en boda W3 Studios" class="portfolio-preview__image">
+                    <img src="images/collage-placeholder-1.jpeg" alt="Boda elegante organizada por W3 Studios"
+                        class="portfolio-preview__image">
+                    <img src="images/collage-placeholder-2.jpeg" alt="Detalle de decoración de boda W3 Studios"
+                        class="portfolio-preview__image">
+                    <img src="images/collage-placeholder-3.jpeg" alt="Pareja feliz en boda W3 Studios"
+                        class="portfolio-preview__image">
                 </div>
-                <p class="portfolio-preview__caption section-subtitle">Visualiza la magia que podemos crear juntos. (Inspirado en el moodboard)</p>
+                <p class="portfolio-preview__caption section-subtitle">Visualiza la magia que podemos crear juntos.
+                    (Inspirado en el moodboard)</p>
                 <div class="text-center">
                     <a href="gallery_es.html" class="button button--secondary">Ver Portfolio de Eventos</a>
                 </div>
@@ -83,11 +107,13 @@
             <div class="container">
                 <h2 id="testimonials-snippet-title" class="section-title">Lo que dicen de Nosotras</h2>
                 <blockquote class="testimonial">
-                    <p class="testimonial__text">"Desde el primer momento, el equipo de W3 Studios entendió nuestra visión y convirtió nuestras ideas en una boda inolvidable. Nos acompañaron en cada decisión, haciéndolo todo mucho más fácil."</p>
+                    <p class="testimonial__text">"Desde el primer momento, el equipo de W3 Studios entendió nuestra
+                        visión y convirtió nuestras ideas en una boda inolvidable. Nos acompañaron en cada decisión,
+                        haciéndolo todo mucho más fácil."</p>
                     <footer class="testimonial__author">- Marta y Juan</footer>
                 </blockquote>
                 <div class="text-center">
-                     <a href="about_es.html#testimonios" class="button button--secondary">Leer más testimonios</a>
+                    <a href="about_es.html#testimonios" class="button button--secondary">Leer más testimonios</a>
                 </div>
             </div>
         </section>
@@ -95,7 +121,8 @@
         <section class="about-snippet section-block section-block--alt-bg" aria-labelledby="about-snippet-title">
             <div class="container">
                 <h2 id="about-snippet-title" class="section-title">Conoce a W3 STUDIOS</h2>
-                <p class="section-subtitle">Somos Lorena, Ainhoa y Melanie, tres chicas apasionadas por el marketing y las bodas, unidas por el deseo de crear experiencias únicas para cada pareja.</p>
+                <p class="section-subtitle">Somos Lorena, Ainhoa y Melanie, tres chicas apasionadas por el marketing y
+                    las bodas, unidas por el deseo de crear experiencias únicas para cada pareja.</p>
                 <div class="text-center">
                     <a href="about_es.html" class="button button--secondary">Más sobre nosotras</a>
                 </div>
@@ -106,13 +133,18 @@
     <footer class="site-footer">
         <div class="container site-footer__container">
             <div class="social-media">
-                <a href="#" class="social-media__link" aria-label="Facebook W3 Studios"><img src="images/icon-facebook.svg" alt="" class="social-media__icon"></a>
-                <a href="#" class="social-media__link" aria-label="Instagram W3 Studios"><img src="images/icon-instagram.svg" alt="" class="social-media__icon"></a>
-                <a href="#" class="social-media__link" aria-label="Pinterest W3 Studios"><img src="images/icon-pinterest.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Facebook W3 Studios"><img
+                        src="images/icon-facebook.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Instagram W3 Studios"><img
+                        src="images/icon-instagram.svg" alt="" class="social-media__icon"></a>
+                <a href="#" class="social-media__link" aria-label="Pinterest W3 Studios"><img
+                        src="images/icon-pinterest.svg" alt="" class="social-media__icon"></a>
             </div>
-            <p class="site-footer__copyright">&copy; <span id="currentYear"></span> W3 STUDIOS. Todos los derechos reservados.</p>
+            <p class="site-footer__copyright">&copy; <span id="currentYear"></span> W3 STUDIOS. Todos los derechos
+                reservados.</p>
         </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>
