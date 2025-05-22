@@ -18,8 +18,6 @@
     --color-header-text: #FAF8F3;
     --color-footer-bg: #000000;
     --color-footer-text: #FAF8F3;
-    --color-footer-link: var(--color-pink-main); 
-    --color-footer-link-hover: var(--color-base-background); 
 
     --font-primary-body: 'Georgia', serif;
     --font-logo: 'Catchy Mager', sans-serif; 
@@ -807,7 +805,6 @@ blockquote {
     gap: calc(var(--spacing-unit) * 1.5);
 }
 .job-card { 
-    text-align: left; 
     background-color: var(--color-white-pure);
 }
 .job-card__title { /* H3 */
@@ -872,7 +869,7 @@ blockquote {
 .form-group .button { 
     width: 100%;
 }
-.contact-form__note { /* Renamed from .form-note to match HTML */
+.contact-form__note {
     font-size: 0.85rem;
     color: var(--color-text-secondary);
     margin-top: var(--spacing-unit);
@@ -963,17 +960,17 @@ blockquote {
 
 @media (max-width: 992px) { /* Tablets */
     .site-nav {
-        display: none;
+        display: none; 
     }
     .language-switcher {
-        margin-left: auto;
+        margin-left: auto; 
     }
 
     .pack {
-        flex-direction: column !important; 
+        flex-direction: column !important;
     }
     .pack__figure {
-        flex-basis: auto;
+        flex-basis: auto; 
         height: 280px;
     }
     
@@ -1002,24 +999,19 @@ blockquote {
     .blog-grid,
     .job-listing,
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
     }
 
     .pack__figure {
         height: 220px;
     }
 
-    .contact-layout { /* Was .contact-container, ensuring media query also targets correctly */
+    .contact-layout { 
         flex-direction: column; 
         padding: var(--spacing-unit);
     }
 
-    .section-block,
-    main > .container:not(.section-block):not(.article-container), /* para los contenedores en main que no usen .section-block */
-    .article-container {
-        padding-top: calc(var(--spacing-unit) * 2);
-        padding-bottom: calc(var(--spacing-unit) * 2);
-    }
+    
     
 }
 
